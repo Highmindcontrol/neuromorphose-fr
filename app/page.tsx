@@ -13,11 +13,13 @@ export default function AccueilPage() {
             Fédérer et accompagner les praticiens de la Neuromorphose®.
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-gris-texte md:text-xl">
-            Bienvenue sur le site institutionnel de la Fédération Française
-            des Praticiens de la Neuromorphose®. La FFPN est la fédération
-            professionnelle de celles et ceux qui exercent en France et
-            dans les territoires francophones une méthode clinique
-            nouvelle, structurée, rigoureuse — la Neuromorphose®.
+            La FFPN réunit, accompagne et sert les professionnels de
+            l&apos;accompagnement formés à la Neuromorphose®. Elle porte
+            la recherche scientifique sur l&apos;interaction des formes
+            géométriques avec le cerveau, ainsi que l&apos;incidence des
+            sons sur les perceptions et ressentis émotionnels. Elle a
+            pour vocation de promouvoir et développer la pratique en
+            France et d&apos;orienter patients et praticiens.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
