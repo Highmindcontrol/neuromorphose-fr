@@ -94,8 +94,8 @@ export default function AccueilPage() {
           <p className="meta text-gris-texte">Trois portes d&apos;entrée</p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <Porte
-              titre="Trouver un praticien"
-              texte="Accès à l'annuaire public de la FFPN. Tous les praticiens listés sont actuellement à jour de leur inscription au Tableau."
+              titre="Trouver un praticien certifié"
+              texte="Près de chez vous, dans votre langue, pour votre besoin. Accès à l'annuaire public de la FFPN — tous les praticiens listés sont à jour de leur inscription au Tableau."
               href="/annuaire"
               cta="Annuaire des praticiens"
             />
