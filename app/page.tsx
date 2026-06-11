@@ -19,7 +19,8 @@ export default function AccueilPage() {
             géométriques avec le cerveau, ainsi que l&apos;incidence des
             sons sur les perceptions et ressentis émotionnels. Elle a
             pour vocation de promouvoir et développer la pratique en
-            France et d&apos;orienter patients et praticiens.
+            France et d&apos;orienter et de protéger patients et
+            praticiens.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
@@ -45,7 +46,7 @@ export default function AccueilPage() {
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
             <Chiffre nombre="20" unite="pays" libelle="Déploiement international visé d'ici 2031 via les fédérations sœurs" />
             <Chiffre nombre="15 000" unite="praticiens" libelle="Objectif d'adhésions à 5 ans sur les 20 pays" />
-            <Chiffre nombre="5" unite="axes de recherche" libelle="Son, musique, émotion, mémoire, posture" />
+            <Chiffre nombre="5" unite="axes de recherche" libelle="Géométrie & neurosciences, ancrage et futurisation, perception et émotion, mémoire, procrastination" />
             <Chiffre nombre="Sept. 2026" unite="" libelle="Ouverture officielle des adhésions" />
           </div>
         </div>
