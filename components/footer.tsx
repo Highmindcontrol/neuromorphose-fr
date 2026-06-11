@@ -9,8 +9,11 @@ export function Footer() {
             <p className="text-sm font-semibold text-encre">
               Fédération Française des Praticiens de la Neuromorphose®
             </p>
-            <p className="mt-2 text-xs leading-relaxed text-gris-texte">
-              Association loi 1901 — siège social France.
+            <p className="mt-1 text-xs italic text-bleu-federation">
+              Une profession naît, qui prend la mesure de l&apos;humain.
+            </p>
+            <p className="mt-3 text-xs leading-relaxed text-gris-texte">
+              Association loi 1901 à vocation ordinale — siège social France.
               Ouverture officielle des adhésions en septembre 2026.
             </p>
             <p className="mt-3 text-xs text-gris-texte">
@@ -30,28 +33,33 @@ export function Footer() {
             <p className="meta text-gris-texte">Naviguer</p>
             <ul className="mt-3 space-y-1.5 text-sm">
               <li>
-                <Link href="/mission" className="hover:text-bleu-federation">
-                  Mission & valeurs
-                </Link>
-              </li>
-              <li>
-                <Link href="/recherche" className="hover:text-bleu-federation">
-                  Recherche scientifique
+                <Link href="/methode" className="hover:text-bleu-federation">
+                  La méthode
                 </Link>
               </li>
               <li>
                 <Link href="/annuaire" className="hover:text-bleu-federation">
-                  Annuaire des praticiens
+                  Trouver un praticien
                 </Link>
               </li>
               <li>
-                <Link href="/adherer" className="hover:text-bleu-federation">
-                  Adhérer
+                <Link href="/devenir-praticien" className="hover:text-bleu-federation">
+                  Devenir praticien
                 </Link>
               </li>
               <li>
-                <Link href="/statuts" className="hover:text-bleu-federation">
-                  Statuts & gouvernance
+                <Link href="/federation" className="hover:text-bleu-federation">
+                  La fédération
+                </Link>
+              </li>
+              <li>
+                <Link href="/deontologie" className="hover:text-bleu-federation">
+                  Déontologie
+                </Link>
+              </li>
+              <li>
+                <Link href="/ressources" className="hover:text-bleu-federation">
+                  Ressources
                 </Link>
               </li>
             </ul>

@@ -10,69 +10,132 @@ export default function AccueilPage() {
             Fédération naissante · Ouverture septembre 2026
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.025em] text-encre md:text-6xl">
-            Fédérer et accompagner les praticiens de la Neuromorphose®.
+            Une profession naît,
+            <br />
+            qui prend la mesure de l&apos;humain.
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gris-texte md:text-xl">
-            La FFPN réunit les professionnels de l&apos;accompagnement
-            formés à la Neuromorphose®. Elle porte la recherche scientifique
-            sur le son, la musique et les ressentis émotionnels dans le
-            développement cérébral, et structure le déploiement
-            international de la méthode.
+          <p className="mt-8 max-w-3xl text-lg leading-relaxed text-gris-texte md:text-xl">
+            Bienvenue sur le site institutionnel de la Fédération Française
+            des Praticiens de la Neuromorphose®. La FFPN est la fédération
+            professionnelle de celles et ceux qui exercent en France et
+            dans les territoires francophones une méthode clinique
+            nouvelle, structurée, rigoureuse — la Neuromorphose®.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
-              href="/adherer"
+              href="/annuaire"
               className="rounded-full border border-bleu-federation bg-bleu-federation px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:bg-bleu-clair"
             >
-              Adhérer à la fédération
+              Trouver un praticien certifié
             </Link>
             <Link
-              href="/mission"
+              href="/methode"
               className="rounded-full border border-encre bg-blanc-casse px-6 py-3 text-sm font-medium uppercase tracking-wider text-encre transition-colors hover:bg-encre hover:text-blanc-casse"
             >
-              Découvrir la mission
+              Comprendre la méthode
             </Link>
           </div>
         </div>
       </section>
 
-      {/* === Chiffres clés === */}
+      {/* === Manifeste d'ouverture === */}
+      <section className="border-b border-gris-trait bg-gris-fond">
+        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
+          <p className="meta text-bleu-federation">Manifeste d&apos;ouverture</p>
+          <div className="mt-6 space-y-6 text-base leading-relaxed text-gris-texte md:text-lg">
+            <p>
+              La Neuromorphose® propose à la personne qui consulte de
+              traverser ce qui la traverse en convoquant une{" "}
+              <strong className="text-encre">forme</strong> intérieure,
+              et en travaillant avec son praticien sur cette forme jusqu&apos;à
+              ce qu&apos;elle s&apos;apaise, qu&apos;elle se transforme, ou
+              qu&apos;elle livre ce qu&apos;elle avait à dire.
+            </p>
+            <p>
+              Cette méthode hérite de plusieurs grandes lignées de la
+              pensée et de la clinique humaines — les neurosciences
+              contemporaines, la psychologie analytique, l&apos;hypnose
+              conversationnelle ericksonienne, les approches somatiques.
+              Elle s&apos;incarne aujourd&apos;hui dans un protocole
+              clinique en sept temps, dans des outils numériques
+              propriétaires, et dans une formation certifiante exigeante.
+            </p>
+            <p>
+              <strong className="text-encre">
+                Notre fédération porte la profession des praticiens qui
+                pratiquent cette méthode.
+              </strong>{" "}
+              Elle garantit la qualité de leur formation, leur déontologie,
+              leur supervision continue. Elle protège les personnes qui
+              les consultent par un cadre éthique strict, une instance
+              disciplinaire indépendante, et une charte du patient publique.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* === Trois portes d'entrée === */}
+      <section className="border-b border-gris-trait">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
+          <p className="meta text-gris-texte">Trois portes d&apos;entrée</p>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <Porte
+              titre="Trouver un praticien"
+              texte="Accès à l'annuaire public de la FFPN. Tous les praticiens listés sont actuellement à jour de leur inscription au Tableau."
+              href="/annuaire"
+              cta="Annuaire des praticiens"
+            />
+            <Porte
+              titre="Devenir praticien Neuromorphose®"
+              texte="Présentation du cursus de formation certifiante en 14 modules, pour les professionnels expérimentés de l'accompagnement humain."
+              href="/devenir-praticien"
+              cta="Découvrir le cursus"
+            />
+            <Porte
+              titre="Comprendre la méthode"
+              texte="Présentation accessible de la Neuromorphose®, ses lignées scientifiques, son protocole en 7 temps, ses garanties éthiques."
+              href="/methode"
+              cta="Lire la méthode"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* === Triple posture (signature) === */}
+      <section className="border-b border-gris-trait bg-encre">
+        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
+          <p className="meta text-blanc-casse/60">Triple posture du praticien</p>
+          <div className="mt-8 space-y-4 text-2xl leading-snug tracking-[-0.015em] text-blanc-casse md:text-3xl">
+            <p>
+              <em>Je prends soin,</em> mais je ne soigne pas.
+            </p>
+            <p>
+              <em>J&apos;éclaire,</em> mais je ne diagnostique pas.
+            </p>
+            <p>
+              <em>J&apos;accompagne,</em> mais je ne prescris pas.
+            </p>
+          </div>
+          <p className="mt-10 max-w-2xl text-sm leading-relaxed text-blanc-casse/70">
+            Cette triple posture est l&apos;engagement public de tout
+            praticien certifié par la FFPN. Elle dit ce que le praticien
+            fait, et ce qu&apos;il ne fait pas. Elle protège la personne
+            accompagnée. Elle distingue la méthode des dérives qu&apos;on
+            rencontre parfois dans le champ des thérapies non
+            conventionnelles.
+          </p>
+        </div>
+      </section>
+
+      {/* === Ambition 5 ans === */}
       <section className="border-b border-gris-trait">
         <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
           <p className="meta mb-6 text-gris-texte">Ambition 5 ans</p>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            <Chiffre nombre="20" unite="pays" libelle="Déploiement international visé d'ici 2031" />
+            <Chiffre nombre="20" unite="pays" libelle="Déploiement international visé d'ici 2031 via les fédérations sœurs" />
             <Chiffre nombre="13 000" unite="praticiens" libelle="Objectif d'adhésions à 5 ans sur les 20 pays" />
-            <Chiffre nombre="5" unite="axes de recherche" libelle="Son, musique, émotion, mémoire, posture" />
+            <Chiffre nombre="14" unite="modules" libelle="Cursus de formation certifiante" />
             <Chiffre nombre="Sept. 2026" unite="" libelle="Ouverture officielle des adhésions" />
-          </div>
-        </div>
-      </section>
-
-      {/* === Trois piliers === */}
-      <section className="border-b border-gris-trait">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
-          <p className="meta mb-3 text-gris-texte">Nos trois piliers</p>
-          <h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
-            Une fédération à la croisée de l&apos;exercice professionnel,
-            de la recherche scientifique et du déploiement international.
-          </h2>
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            <Pilier
-              numero="01"
-              titre="Encadrement professionnel"
-              texte="Charte déontologique, certification continue des membres, annuaire public des praticiens reconnus. Garantir au grand public un niveau de qualité homogène, partout dans le monde."
-            />
-            <Pilier
-              numero="02"
-              titre="Recherche scientifique"
-              texte="Études internationales sur le son, la musique et les ressentis émotionnels dans le développement cérébral. Les membres-praticiens deviennent capteurs structurés d'une recherche mondiale unique."
-            />
-            <Pilier
-              numero="03"
-              titre="Déploiement international"
-              texte="Vingt pays visés sur cinq ans. Un réseau organique de représentants régionaux qui forment, accompagnent et structurent la communauté Neuromorphose® localement."
-            />
           </div>
         </div>
       </section>
@@ -89,15 +152,17 @@ export default function AccueilPage() {
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-gris-texte md:text-lg">
               Les premières adhésions ouvrent en septembre 2026 et donnent
-              accès à la première vague de représentants régionaux —
-              membres fondateurs avec voix consultative à l&apos;assemblée
-              générale et accès prioritaire aux programmes de recherche.
+              accès au statut de <strong className="text-encre">membre
+              fondateur</strong> — places limitées dans chaque pays,
+              conditions d&apos;engagement spécifiques. Les praticiens
+              fondateurs accompagneront la rédaction définitive des
+              statuts, du Pacte de Véracité et du Code de déontologie.
             </p>
             <Link
-              href="/adherer"
+              href="/devenir-praticien"
               className="mt-8 inline-flex rounded-full border border-encre bg-encre px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:bg-blanc-casse hover:text-encre"
             >
-              Demander à adhérer
+              Découvrir le cursus de formation
             </Link>
           </div>
         </div>
@@ -130,22 +195,31 @@ function Chiffre({
   );
 }
 
-function Pilier({
-  numero,
+function Porte({
   titre,
   texte,
+  href,
+  cta,
 }: {
-  numero: string;
   titre: string;
   texte: string;
+  href: string;
+  cta: string;
 }) {
   return (
-    <div>
-      <p className="text-3xl font-light text-bleu-federation">{numero}</p>
-      <h3 className="mt-3 text-lg font-semibold tracking-[-0.01em] text-encre">
+    <Link
+      href={href}
+      className="group flex flex-col rounded-sm border border-gris-trait bg-blanc-casse p-8 transition-all hover:-translate-y-0.5 hover:border-bleu-federation"
+    >
+      <h3 className="text-xl font-semibold tracking-[-0.01em] text-encre">
         {titre}
       </h3>
-      <p className="mt-2 text-sm leading-relaxed text-gris-texte">{texte}</p>
-    </div>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-gris-texte">
+        {texte}
+      </p>
+      <span className="mt-6 text-sm font-medium text-bleu-federation group-hover:underline">
+        {cta} →
+      </span>
+    </Link>
   );
 }

@@ -16,12 +16,16 @@ export function Header() {
           </span>
         </Link>
         <nav className="flex items-center gap-1 text-sm">
-          <NavLink href="/mission">Mission</NavLink>
-          <NavLink href="/recherche">Recherche</NavLink>
-          <NavLink href="/annuaire">Annuaire</NavLink>
-          <NavLink href="/adherer">Adhérer</NavLink>
-          <NavLink href="/actualites" className="hidden md:inline-flex">
-            Actualités
+          <NavLink href="/methode">La méthode</NavLink>
+          <NavLink href="/annuaire">Trouver un praticien</NavLink>
+          <NavLink href="/devenir-praticien" className="hidden md:inline-flex">
+            Devenir praticien
+          </NavLink>
+          <NavLink href="/federation" className="hidden md:inline-flex">
+            La fédération
+          </NavLink>
+          <NavLink href="/deontologie" className="hidden md:inline-flex">
+            Déontologie
           </NavLink>
           <Link
             href="/pro"
