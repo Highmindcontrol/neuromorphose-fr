@@ -29,11 +29,24 @@ export default function AccueilPage() {
               Trouver un praticien certifié
             </Link>
             <Link
-              href="/methode"
+              href="/devenir-praticien"
               className="rounded-full border border-encre bg-blanc-casse px-6 py-3 text-sm font-medium uppercase tracking-wider text-encre transition-colors hover:bg-encre hover:text-blanc-casse"
             >
-              Comprendre la méthode
+              Adhérer à la fédération
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* === Ambition 5 ans (remonté tout en haut sous le hero) === */}
+      <section className="border-b border-gris-trait bg-gris-fond">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
+          <p className="meta mb-6 text-bleu-federation">Ambition 5 ans</p>
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            <Chiffre nombre="20" unite="pays" libelle="Déploiement international visé d'ici 2031 via les fédérations sœurs" />
+            <Chiffre nombre="15 000" unite="praticiens" libelle="Objectif d'adhésions à 5 ans sur les 20 pays" />
+            <Chiffre nombre="5" unite="axes de recherche" libelle="Son, musique, émotion, mémoire, posture" />
+            <Chiffre nombre="Sept. 2026" unite="" libelle="Ouverture officielle des adhésions" />
           </div>
         </div>
       </section>
@@ -124,19 +137,6 @@ export default function AccueilPage() {
             rencontre parfois dans le champ des thérapies non
             conventionnelles.
           </p>
-        </div>
-      </section>
-
-      {/* === Ambition 5 ans === */}
-      <section className="border-b border-gris-trait">
-        <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
-          <p className="meta mb-6 text-gris-texte">Ambition 5 ans</p>
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            <Chiffre nombre="20" unite="pays" libelle="Déploiement international visé d'ici 2031 via les fédérations sœurs" />
-            <Chiffre nombre="13 000" unite="praticiens" libelle="Objectif d'adhésions à 5 ans sur les 20 pays" />
-            <Chiffre nombre="14" unite="modules" libelle="Cursus de formation certifiante" />
-            <Chiffre nombre="Sept. 2026" unite="" libelle="Ouverture officielle des adhésions" />
-          </div>
         </div>
       </section>
 
