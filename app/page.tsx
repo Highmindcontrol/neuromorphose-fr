@@ -10,9 +10,7 @@ export default function AccueilPage() {
             Fédération naissante · Ouverture septembre 2026
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.025em] text-encre md:text-6xl">
-            Une profession naît,
-            <br />
-            qui prend la mesure de l&apos;humain.
+            Fédérer et accompagner les praticiens de la Neuromorphose®.
           </h1>
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-gris-texte md:text-xl">
             Bienvenue sur le site institutionnel de la Fédération Française
