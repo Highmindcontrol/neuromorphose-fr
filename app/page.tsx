@@ -125,8 +125,10 @@ export default function AccueilPage() {
               accès au statut de <strong className="text-encre">membre
               fondateur</strong> — places limitées dans chaque pays,
               conditions d&apos;engagement spécifiques. Les praticiens
-              fondateurs accompagneront la rédaction définitive des
-              statuts, du Pacte de Véracité et du Code de déontologie.
+              fondateurs auront un rôle de «&nbsp;bêta testeur&nbsp;» et
+              s&apos;engagent à remonter des informations sur le
+              comportement de la plateforme ainsi que des avis motivés
+              de leurs patients.
             </p>
             <Link
               href="/devenir-praticien"
