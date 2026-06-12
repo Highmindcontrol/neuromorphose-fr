@@ -101,7 +101,7 @@ export default function AccueilPage() {
             détiennent pas le titre de professionnel de santé, c&apos;est
             pour cette raison qu&apos;ils n&apos;ont ni le droit de
             diagnostiquer ni le droit de prescrire. En revanche,
-            l&apos;utilisation des outils de la Neuromorphose® est tout
+            l&apos;utilisation des outils du neuromorphologue est tout
             à fait adaptée à leur pratique. Elle protège la personne
             accompagnée. Elle distingue la méthode des dérives qu&apos;on
             rencontre parfois dans le champ des thérapies non
