@@ -9,9 +9,6 @@ export function Footer() {
             <p className="text-sm font-semibold text-encre">
               Fédération Française des Praticiens de la Neuromorphose®
             </p>
-            <p className="mt-1 text-xs italic text-bleu-federation">
-              Une profession naît, qui prend la mesure de l&apos;humain.
-            </p>
             <p className="mt-3 text-xs leading-relaxed text-gris-texte">
               Association loi 1901 à vocation ordinale — siège social France.
               Ouverture officielle des adhésions en septembre 2026.
