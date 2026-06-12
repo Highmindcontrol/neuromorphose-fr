@@ -30,14 +30,20 @@ export default function DeontologiePage() {
 
       {/* === Triple posture === */}
       <section className="border-b border-gris-trait bg-encre">
-        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center md:px-10 md:py-24">
           <p className="meta text-blanc-casse/60">La triple posture du praticien</p>
           <div className="mt-8 space-y-4 text-2xl leading-snug tracking-[-0.015em] text-blanc-casse md:text-3xl">
-            <p><em>Je prends soin,</em> mais je ne soigne pas.</p>
-            <p><em>J&apos;éclaire,</em> mais je ne diagnostique pas.</p>
-            <p><em>J&apos;accompagne,</em> mais je ne prescris pas.</p>
+            <p>
+              <span className="text-bleu-clair">Je prends soin,</span> mais je ne soigne pas.
+            </p>
+            <p>
+              <span className="text-bleu-clair">J&apos;éclaire,</span> mais je ne diagnostique pas.
+            </p>
+            <p>
+              <span className="text-bleu-clair">J&apos;accompagne,</span> mais je ne prescris pas.
+            </p>
           </div>
-          <p className="mt-10 max-w-2xl text-sm leading-relaxed text-blanc-casse/70">
+          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed text-blanc-casse/70">
             Cette triple posture est l&apos;engagement public de tout
             praticien certifié. Elle est signée à l&apos;issue du Module 0
             du cursus, et elle est opposable à tout praticien certifié
@@ -112,7 +118,7 @@ export default function DeontologiePage() {
           </div>
           <a
             href="mailto:signalement@neuromorphose.fr"
-            className="mt-10 inline-flex rounded-full border border-encre bg-encre px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:bg-blanc-casse hover:text-encre"
+            className="mt-10 inline-flex rounded-full border border-encre bg-encre px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:border-bleu-clair hover:bg-bleu-clair hover:text-blanc-casse"
           >
             Saisir l&apos;instance disciplinaire
           </a>
