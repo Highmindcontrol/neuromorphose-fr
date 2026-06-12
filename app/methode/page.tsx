@@ -131,14 +131,14 @@ export default function MethodePage() {
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
           <p className="meta text-bleu-federation">Les trois modes cliniques</p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
-            Une séance, un mode — pas de mélange en cours de route.
+            Une séance multifacette, trois modes en fonction du besoin
+            du patient.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-gris-texte">
-            Une séance de Neuromorphose® se déploie dans l&apos;un des
-            trois modes cliniques, identifié à l&apos;anamnèse selon ce
-            que la personne porte. Cette discipline d&apos;intégrité
-            méthodologique distingue une séance Neuromorphose®
-            d&apos;une conversation thérapeutique généraliste.
+            Une séance de Neuromorphose® mobilise un ou plusieurs des
+            trois modes cliniques, choisis à l&apos;anamnèse selon ce
+            que la personne porte. Le praticien articule ces modes pour
+            épouser au plus près le besoin réel du patient.
           </p>
           <div className="mt-12 grid gap-10 md:grid-cols-3">
             <Mode
