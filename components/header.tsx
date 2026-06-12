@@ -24,6 +24,9 @@ export function Header() {
           <NavLink href="/deontologie" className="hidden md:inline-flex">
             Déontologie
           </NavLink>
+          <NavLink href="/recherche" className="hidden md:inline-flex">
+            Recherche
+          </NavLink>
           <Link
             href="/pro"
             className="ml-2 rounded-full border border-bleu-federation bg-bleu-federation px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:bg-bleu-clair"
