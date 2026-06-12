@@ -52,42 +52,6 @@ export default function AccueilPage() {
         </div>
       </section>
 
-      {/* === Manifeste d'ouverture === */}
-      <section className="border-b border-gris-trait bg-gris-fond">
-        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
-          <p className="meta text-bleu-federation">Manifeste d&apos;ouverture</p>
-          <div className="mt-6 space-y-6 text-base leading-relaxed text-gris-texte md:text-lg">
-            <p>
-              La Neuromorphose® propose à la personne qui consulte de
-              traverser ce qui la traverse en convoquant une{" "}
-              <strong className="text-encre">forme</strong> intérieure,
-              et en travaillant avec son praticien sur cette forme jusqu&apos;à
-              ce qu&apos;elle s&apos;apaise, qu&apos;elle se transforme, ou
-              qu&apos;elle livre ce qu&apos;elle avait à dire.
-            </p>
-            <p>
-              Cette méthode hérite de plusieurs grandes lignées de la
-              pensée et de la clinique humaines — les neurosciences
-              contemporaines, la psychologie analytique, l&apos;hypnose
-              conversationnelle ericksonienne, les approches somatiques.
-              Elle s&apos;incarne aujourd&apos;hui dans un protocole
-              clinique en sept temps, dans des outils numériques
-              propriétaires, et dans une formation certifiante exigeante.
-            </p>
-            <p>
-              <strong className="text-encre">
-                Notre fédération porte la profession des praticiens qui
-                pratiquent cette méthode.
-              </strong>{" "}
-              Elle garantit la qualité de leur formation, leur déontologie,
-              leur supervision continue. Elle protège les personnes qui
-              les consultent par un cadre éthique strict, une instance
-              disciplinaire indépendante, et une charte du patient publique.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* === Trois portes d'entrée === */}
       <section className="border-b border-gris-trait">
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
