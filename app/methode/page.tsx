@@ -41,56 +41,15 @@ export default function MethodePage() {
         </div>
       </section>
 
-      {/* === L'intuition fondatrice === */}
-      <section className="border-b border-gris-trait">
-        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
-          <p className="meta text-bleu-federation">L&apos;intuition fondatrice</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
-            Une dissymétrie clinique, prise au sérieux.
-          </h2>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-gris-texte md:text-lg">
-            <p>
-              Au commencement, une dissymétrie clinique observée. Certaines
-              personnes traversent des années de thérapie verbale sans
-              qu&apos;aucun verrou ne cède. Récits parfaits, intelligence
-              du propos, lucidité de l&apos;introspection — et pourtant,
-              ça tourne en rond.
-            </p>
-            <p>
-              À l&apos;inverse, d&apos;autres personnes posent en quarante
-              minutes, devant un dispositif visuel tendu presque par hasard,
-              le doigt sur ce que des dizaines de séances n&apos;avaient
-              pas réussi à nommer. Une forme apparaît. Un cube creux qui se
-              révèle être le tombeau d&apos;un père. Une sphère cassée qui
-              dit une rupture indicible. Une spirale qui éclaircit quinze
-              ans de confusion intérieure.
-            </p>
-            <p>
-              <strong className="text-encre">
-                Cette dissymétrie a été prise au sérieux.
-              </strong>{" "}
-              La Neuromorphose® est née de cette prise au sérieux — une
-              méthode qui propose à la personne de convoquer une forme
-              dans son espace mental, de la manipuler conjointement avec
-              son praticien dans un dispositif visuel précis, et de laisser
-              cette forme dire ce que les mots ne savent pas dire.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* === Six lignées scientifiques === */}
       <section className="border-b border-gris-trait bg-gris-fond">
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-24">
           <p className="meta text-bleu-federation">Six lignées scientifiques</p>
           <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
-            La Neuromorphose® ne se rattache à aucune école unique.
+            La Neuromorphose® ne se rattache à aucune école unique, mais
+            elle s&apos;inscrit à l&apos;intersection de six lignées
+            scientifiques majeures.
           </h2>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-gris-texte">
-            Elle s&apos;inscrit à l&apos;intersection de six lignées
-            scientifiques majeures qui convergent dans une seule méthode
-            clinique.
-          </p>
           <div className="mt-12 grid gap-10 md:grid-cols-2">
             <Lignee
               numero="01"
