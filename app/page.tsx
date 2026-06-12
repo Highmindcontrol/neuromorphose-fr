@@ -81,23 +81,28 @@ export default function AccueilPage() {
 
       {/* === Triple posture (signature) === */}
       <section className="border-b border-gris-trait bg-encre">
-        <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center md:px-10 md:py-24">
           <p className="meta text-blanc-casse/60">Triple posture du praticien</p>
           <div className="mt-8 space-y-4 text-2xl leading-snug tracking-[-0.015em] text-blanc-casse md:text-3xl">
             <p>
-              <em>Je prends soin,</em> mais je ne soigne pas.
+              <span className="text-bleu-clair">Je prends soin,</span> mais je ne soigne pas.
             </p>
             <p>
-              <em>J&apos;éclaire,</em> mais je ne diagnostique pas.
+              <span className="text-bleu-clair">J&apos;éclaire,</span> mais je ne diagnostique pas.
             </p>
             <p>
-              <em>J&apos;accompagne,</em> mais je ne prescris pas.
+              <span className="text-bleu-clair">J&apos;accompagne,</span> mais je ne prescris pas.
             </p>
           </div>
-          <p className="mt-10 max-w-2xl text-sm leading-relaxed text-blanc-casse/70">
+          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed text-blanc-casse/70">
             Cette triple posture est l&apos;engagement public de tout
-            praticien certifié par la FFPN. Elle dit ce que le praticien
-            fait, et ce qu&apos;il ne fait pas. Elle protège la personne
+            praticien certifié par la FFPN qui n&apos;est pas
+            professionnel de santé. En effet, certains praticiens ne
+            détiennent pas le titre de professionnel de santé, c&apos;est
+            pour cette raison qu&apos;ils n&apos;ont ni le droit de
+            diagnostiquer ni le droit de prescrire. En revanche,
+            l&apos;utilisation des outils de la Neuromorphose® est tout
+            à fait adaptée à leur pratique. Elle protège la personne
             accompagnée. Elle distingue la méthode des dérives qu&apos;on
             rencontre parfois dans le champ des thérapies non
             conventionnelles.
