@@ -218,14 +218,9 @@ export default function MethodePage() {
             déontologique, inscrite dans le Pacte de Véracité que signe
             chaque praticien certifié.
           </h2>
-          <div className="mt-12 space-y-4 text-2xl leading-snug tracking-[-0.015em] text-blanc-casse md:text-3xl">
-            <p><em>Je prends soin,</em> mais je ne soigne pas.</p>
-            <p><em>J&apos;éclaire,</em> mais je ne diagnostique pas.</p>
-            <p><em>J&apos;accompagne,</em> mais je ne prescris pas.</p>
-          </div>
           <div className="mt-12 grid gap-8 text-sm leading-relaxed text-blanc-casse/80 md:grid-cols-3">
             <div>
-              <p className="text-blanc-casse font-semibold">Prendre soin sans soigner</p>
+              <p className="text-bleu-clair font-semibold">Prendre soin sans soigner</p>
               <p className="mt-2">
                 Nous prenons soin de la personne dans sa traversée intérieure.
                 Mais aucune affection somatique, aucune pathologie
@@ -233,7 +228,7 @@ export default function MethodePage() {
               </p>
             </div>
             <div>
-              <p className="text-blanc-casse font-semibold">Éclairer sans diagnostiquer</p>
+              <p className="text-bleu-clair font-semibold">Éclairer sans diagnostiquer</p>
               <p className="mt-2">
                 Nous éclairons par le repérage clinique, nous orientons.
                 Mais nous n&apos;établissons pas de diagnostic
@@ -242,7 +237,7 @@ export default function MethodePage() {
               </p>
             </div>
             <div>
-              <p className="text-blanc-casse font-semibold">Accompagner sans prescrire</p>
+              <p className="text-bleu-clair font-semibold">Accompagner sans prescrire</p>
               <p className="mt-2">
                 Nous accompagnons par la présence thérapeutique, la voix
                 calibrée, la co-manipulation de la forme. Mais aucun
