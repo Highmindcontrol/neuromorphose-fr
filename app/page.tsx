@@ -7,7 +7,7 @@ export default function AccueilPage() {
       <section className="border-b border-gris-trait">
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-28">
           <p className="meta text-bleu-federation">
-            Fédération naissante · Ouverture septembre 2026
+            Fédération Française des Praticiens de la Neuromorphose®
           </p>
           <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.025em] text-encre md:text-6xl">
             Fédérer et accompagner les praticiens de la Neuromorphose®.

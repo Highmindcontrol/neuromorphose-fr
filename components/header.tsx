@@ -11,9 +11,6 @@ export function Header() {
           <span className="text-base font-semibold tracking-[-0.01em] text-encre">
             FFPN
           </span>
-          <span className="hidden text-xs text-gris-texte md:inline">
-            Fédération Française des Praticiens de la Neuromorphose®
-          </span>
         </Link>
         <nav className="flex items-center gap-1 text-sm">
           <NavLink href="/methode">La méthode</NavLink>
