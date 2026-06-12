@@ -14,9 +14,9 @@ export default function AnnuairePage() {
           <h1 className="mt-4 text-4xl font-semibold leading-tight tracking-[-0.025em] text-encre md:text-5xl">
             Près de chez vous,
             <br />
-            près de votre langue,
+            dans votre langue,
             <br />
-            près de votre besoin.
+            pour votre besoin.
           </h1>
           <p className="mt-8 text-lg leading-relaxed text-gris-texte md:text-xl">
             L&apos;annuaire public de la FFPN rassemble tous les
@@ -81,7 +81,8 @@ export default function AnnuairePage() {
         <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
           <p className="meta text-blanc-casse/60">Charte du patient FFPN</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-blanc-casse md:text-4xl">
-            Avant de consulter, lisez la charte du patient.
+            Avant de consulter,{" "}
+            <span className="text-bleu-clair">lisez la charte du patient</span>.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-blanc-casse/80 md:text-lg">
             Elle dit ce que vous pouvez attendre d&apos;un praticien
@@ -123,7 +124,7 @@ export default function AnnuairePage() {
             </a>
             <a
               href="mailto:signalement@neuromorphose.fr"
-              className="rounded-full border border-blanc-casse/40 bg-transparent px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:bg-blanc-casse hover:text-encre"
+              className="rounded-full border border-blanc-casse/40 bg-transparent px-6 py-3 text-sm font-medium uppercase tracking-wider text-blanc-casse transition-colors hover:border-bleu-clair hover:bg-bleu-clair hover:text-blanc-casse"
             >
               Signaler un manquement
             </a>
