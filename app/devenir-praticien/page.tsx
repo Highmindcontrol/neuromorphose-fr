@@ -163,14 +163,15 @@ export default function DevenirPraticienPage() {
         <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-24">
           <p className="meta text-bleu-federation">Durée et tarifs</p>
           <h2 className="mt-4 text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
-            Six à dix-huit mois selon votre rythme.
+            Trois à six mois selon votre rythme et votre parcours
+            professionnel.
           </h2>
           <div className="mt-10 space-y-6 text-base leading-relaxed text-gris-texte md:text-lg">
             <p>
               <strong className="text-encre">Durée</strong> — le cursus
-              se traverse en six à dix-huit mois selon votre
-              disponibilité, votre rythme, et la profondeur de votre
-              travail personnel. Aucun délai imposé.
+              se traverse en trois à six mois selon votre disponibilité,
+              votre rythme, votre parcours professionnel et la profondeur
+              de votre travail personnel. Aucun délai imposé.
             </p>
             <p>
               <strong className="text-encre">Tarifs</strong> — barème
