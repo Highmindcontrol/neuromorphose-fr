@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { connecterPro } from "./actions";
-import { safeNextPath } from "@/lib/pro-lock";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
@@ -7,14 +7,27 @@ export const metadata = {
   title: "Connexion espace pro",
 };
 
+function safeNext(input: string | undefined): string {
+  if (!input) return "/pro/dashboard";
+  if (!input.startsWith("/")) return "/pro/dashboard";
+  if (input.startsWith("//")) return "/pro/dashboard";
+  return input;
+}
+
 type Props = {
   searchParams: Promise<{ next?: string; error?: string }>;
 };
 
 export default async function ConnexionProPage({ searchParams }: Props) {
   const params = await searchParams;
-  const next = safeNextPath(params.next);
-  const hasError = params.error === "1";
+  const next = safeNext(params.next);
+
+  const messageErreur =
+    params.error === "auth"
+      ? "Email ou mot de passe incorrect. Réessayez."
+      : params.error === "champs"
+        ? "Merci de renseigner votre email et votre mot de passe."
+        : null;
 
   return (
     <>
@@ -28,9 +41,8 @@ export default async function ConnexionProPage({ searchParams }: Props) {
             Connectez-vous à votre poste de travail.
           </h1>
           <p className="mt-5 text-sm leading-relaxed text-gris-texte">
-            Espace réservé aux délégués régionaux de la FFPN. Si
-            vous avez perdu votre mot de passe, contactez la direction
-            à{" "}
+            Espace réservé aux délégués régionaux de la FFPN. Pas encore
+            de compte&nbsp;? Contactez la direction à{" "}
             <a
               href="mailto:delegues@neuromorphose.fr"
               className="text-bleu-federation underline hover:text-bleu-clair"
@@ -44,6 +56,22 @@ export default async function ConnexionProPage({ searchParams }: Props) {
             <input type="hidden" name="next" value={next} />
 
             <div>
+              <label htmlFor="email" className="meta block text-gris-texte">
+                Email professionnel
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autoFocus
+                required
+                autoComplete="email"
+                placeholder="prenom.nom@neuromorphose.fr"
+                className="mt-3 w-full border-b border-gris-trait bg-transparent px-1 py-3 text-base text-encre outline-none transition-colors placeholder:text-gris-meta focus:border-bleu-federation"
+              />
+            </div>
+
+            <div>
               <label
                 htmlFor="password"
                 className="meta block text-gris-texte"
@@ -54,17 +82,14 @@ export default async function ConnexionProPage({ searchParams }: Props) {
                 type="password"
                 id="password"
                 name="password"
-                autoFocus
                 required
                 autoComplete="current-password"
                 className="mt-3 w-full border-b border-gris-trait bg-transparent px-1 py-3 text-base text-encre outline-none transition-colors focus:border-bleu-federation"
               />
             </div>
 
-            {hasError && (
-              <p className="text-sm text-red-600">
-                Mot de passe incorrect. Réessayez.
-              </p>
+            {messageErreur && (
+              <p className="text-sm text-red-600">{messageErreur}</p>
             )}
 
             <button
@@ -73,6 +98,15 @@ export default async function ConnexionProPage({ searchParams }: Props) {
             >
               Se connecter
             </button>
+
+            <p className="text-center text-xs">
+              <Link
+                href="/pro/reset-password"
+                className="text-gris-texte underline hover:text-bleu-federation"
+              >
+                Mot de passe oublié&nbsp;?
+              </Link>
+            </p>
           </form>
 
           <p className="mt-10 text-center text-xs text-gris-texte">
