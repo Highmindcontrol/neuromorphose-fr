@@ -51,7 +51,7 @@ export default function DashboardPage() {
         Votre poste de travail.
       </h1>
       <p className="mt-6 max-w-2xl text-base leading-relaxed text-gris-texte md:text-lg">
-        Tous les outils du représentant régional FFPN, centralisés.
+        Tous les outils du délégué régional FFPN, centralisés.
         Prospection, agenda, comptes rendus, bibliothèque commerciale,
         suivi de commission — tout part d&apos;ici.
       </p>

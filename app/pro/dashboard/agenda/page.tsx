@@ -56,7 +56,7 @@ export default function AgendaPage() {
 
       <p className="mt-6 text-xs italic text-gris-texte">
         Données d&apos;exemple — la synchronisation Google Calendar sera
-        branchée au moment de l&apos;ouverture du réseau de représentants.
+        branchée au moment de l&apos;ouverture du réseau de délégués.
       </p>
     </article>
   );

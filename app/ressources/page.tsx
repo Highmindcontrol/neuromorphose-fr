@@ -115,7 +115,7 @@ export default function RessourcesPage() {
               href="/pro"
               className="rounded-full border border-encre bg-blanc-casse px-6 py-3 text-sm font-medium uppercase tracking-wider text-encre transition-colors hover:bg-encre hover:text-blanc-casse"
             >
-              Espace représentants FFPN
+              Espace délégués FFPN
             </Link>
           </div>
         </div>

@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { PRO_COOKIE, hashProPassword } from "@/lib/pro-lock";
 
 /**
- * Verrou de l'espace pro représentants FFPN.
+ * Verrou de l'espace pro délégués FFPN.
  * Toute requête vers /pro/dashboard/* exige le cookie ffpn_pro valide.
  * Sinon → redirection vers /pro/connexion?next=<chemin demandé>.
  *

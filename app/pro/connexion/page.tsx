@@ -22,20 +22,20 @@ export default async function ConnexionProPage({ searchParams }: Props) {
       <main className="bg-blanc-casse">
         <article className="mx-auto max-w-md px-6 py-20 md:py-24">
           <p className="meta text-bleu-federation">
-            Espace pro · Représentants FFPN
+            Espace pro · Délégués FFPN
           </p>
           <h1 className="mt-5 text-3xl font-semibold tracking-[-0.02em] text-encre md:text-4xl">
             Connectez-vous à votre poste de travail.
           </h1>
           <p className="mt-5 text-sm leading-relaxed text-gris-texte">
-            Espace réservé aux représentants régionaux de la FFPN. Si
+            Espace réservé aux délégués régionaux de la FFPN. Si
             vous avez perdu votre mot de passe, contactez la direction
             à{" "}
             <a
-              href="mailto:representants@neuromorphose.fr"
+              href="mailto:delegues@neuromorphose.fr"
               className="text-bleu-federation underline hover:text-bleu-clair"
             >
-              representants@neuromorphose.fr
+              delegues@neuromorphose.fr
             </a>
             .
           </p>
@@ -76,9 +76,9 @@ export default async function ConnexionProPage({ searchParams }: Props) {
           </form>
 
           <p className="mt-10 text-center text-xs text-gris-texte">
-            Pas encore représentant&nbsp;?{" "}
+            Pas encore délégué&nbsp;?{" "}
             <a
-              href="mailto:representants@neuromorphose.fr?subject=Candidature%20représentant%20FFPN"
+              href="mailto:delegues@neuromorphose.fr?subject=Candidature%20délégué%20FFPN"
               className="text-bleu-federation underline hover:text-bleu-clair"
             >
               Candidater

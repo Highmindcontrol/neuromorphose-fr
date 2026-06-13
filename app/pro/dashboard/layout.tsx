@@ -2,7 +2,7 @@ import Link from "next/link";
 import { deconnecterPro } from "@/app/pro/connexion/actions";
 
 /**
- * Layout du poste de travail représentant FFPN.
+ * Layout du poste de travail délégué FFPN.
  * Sidebar gauche avec les 6 outils, header avec déconnexion,
  * zone de contenu principal flex-1.
  */
@@ -38,7 +38,7 @@ export default function DashboardLayout({
         </div>
 
         <nav
-          aria-label="Outils représentant"
+          aria-label="Outils délégué"
           className="flex-1 overflow-y-auto px-3"
         >
           <ul className="space-y-1">

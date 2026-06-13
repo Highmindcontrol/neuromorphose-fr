@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 /** Header public FFPN — sobre, institutionnel, fond blanc.
- *  L'espace pro représentants est accessible via le lien tout à
+ *  L'espace pro délégués est accessible via le lien tout à
  *  droite (badge discret « Espace pro » → /pro). */
 export function Header() {
   return (

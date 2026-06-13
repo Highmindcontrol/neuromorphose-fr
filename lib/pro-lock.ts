@@ -1,13 +1,13 @@
 /**
- * Verrou de l'espace pro représentants FFPN — utilitaires partagés
+ * Verrou de l'espace pro délégués FFPN — utilitaires partagés
  * entre le middleware (runtime Edge) et le formulaire de connexion
  * (runtime Node).
  *
- * V1 : un mot de passe partagé pour tous les représentants
+ * V1 : un mot de passe partagé pour tous les délégués
  * (variable d'environnement `FFPN_PRO_PASSWORD`). À l'arrivée d'une
  * équipe étoffée, on basculera sur Supabase Auth avec un compte par
- * représentant. Pour l'instant, mot de passe unique cohérent avec le
- * faible nombre de représentants au lancement.
+ * délégué. Pour l'instant, mot de passe unique cohérent avec le
+ * faible nombre de délégués au lancement.
  *
  * Le cookie posé est un SHA-256 du mot de passe attendu — le mot de
  * passe lui-même ne transite pas en clair après la première saisie.

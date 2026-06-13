@@ -87,7 +87,7 @@ export default function ProspectsPage() {
 
       <p className="mt-6 text-xs italic text-gris-texte">
         Données d&apos;exemple — la base prospects sera connectée à Supabase
-        au branchement de l&apos;auth multi-représentants.
+        au branchement de l&apos;auth multi-délégués.
       </p>
     </article>
   );
