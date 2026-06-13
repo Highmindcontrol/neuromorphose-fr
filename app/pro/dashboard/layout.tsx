@@ -3,8 +3,10 @@ import { deconnecterPro } from "@/app/pro/connexion/actions";
 
 /**
  * Layout du poste de travail délégué FFPN.
- * Sidebar gauche avec les 6 outils, header avec déconnexion,
- * zone de contenu principal flex-1.
+ * Sidebar gauche avec les 6 outils + top bar minimal avec
+ * « Déconnexion espace pro » à droite. Aucun chrome public hérité
+ * (header public et footer sont masqués par <ChromePublicConditionnel>
+ * dans le layout racine quand on est sur /pro/dashboard/*).
  */
 
 const OUTILS = [
@@ -23,11 +25,11 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex min-h-screen bg-blanc-casse">
-      {/* Sidebar */}
+    <div className="flex min-h-screen w-full bg-blanc-casse">
+      {/* Sidebar gauche */}
       <aside className="sticky top-0 hidden h-screen w-64 flex-shrink-0 flex-col self-start border-r border-gris-trait bg-blanc-casse md:flex">
         <div className="px-6 py-5">
-          <Link href="/" className="flex items-baseline gap-2">
+          <Link href="/pro/dashboard" className="flex items-baseline gap-2">
             <span className="text-base font-semibold tracking-[-0.01em] text-encre">
               FFPN
             </span>
@@ -57,19 +59,25 @@ export default function DashboardLayout({
             ))}
           </ul>
         </nav>
-
-        <form action={deconnecterPro} className="border-t border-gris-trait p-3">
-          <button
-            type="submit"
-            className="w-full rounded-md px-3 py-2 text-left text-sm text-gris-texte transition-colors hover:bg-gris-fond hover:text-encre"
-          >
-            ← Se déconnecter
-          </button>
-        </form>
       </aside>
 
-      {/* Main */}
-      <main className="flex-1 overflow-x-clip">{children}</main>
+      {/* Colonne droite : top bar + contenu */}
+      <div className="flex flex-1 flex-col overflow-x-clip">
+        {/* Top bar */}
+        <header className="sticky top-0 z-10 flex items-center justify-end border-b border-gris-trait bg-blanc-casse px-6 py-3">
+          <form action={deconnecterPro}>
+            <button
+              type="submit"
+              className="inline-flex items-center gap-2 rounded-full border border-encre bg-blanc-casse px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-encre transition-colors hover:border-bleu-clair hover:bg-bleu-clair hover:text-blanc-casse"
+            >
+              Déconnexion espace pro →
+            </button>
+          </form>
+        </header>
+
+        {/* Contenu principal */}
+        <main className="flex-1">{children}</main>
+      </div>
     </div>
   );
 }
